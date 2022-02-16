@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="ServiceStack.Kestrel" Version="6.0.0" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\LibsCSharp\HttpLib\HttpLib.csproj" />
+    <ProjectReference Include="..\..\LibsCSharp\LogLib\LogLib.csproj" />
+    <ProjectReference Include="..\RiotArduinoLib\RiotArduinoLib.csproj" />
+    <ProjectReference Include="..\RiotData\RiotData.csproj" />
+  </ItemGroup>
+
+</Project>
